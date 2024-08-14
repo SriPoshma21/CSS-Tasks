@@ -1,0 +1,12 @@
+header h1,ul{
+    display: inline-block;
+}
+h3{
+float: left;
+}
+ul{
+    float: right;
+}
+li{
+    display: inline;
+}
