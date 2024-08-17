@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: aquamarine;
+            border-radius: 10px;
+            width: 100%;
+            height: 50px;
+            position: sticky;
+            top:0 ;
+        }
+        .php,.jquery,.java,.w3css,.cc,.bootstrap{
+            text-align: center;
+            width:45%;
+            height:200px;
+            border-radius: 10px;
+            margin: 20px 30px;
+        }
+        li{
+            font-weight:900;
+            color: black;
+            float: left;
+            display: inline-block;
+            position: relative;
+            right: 10px;
+            padding: 10px 10px;
+         }
+         li:hover{
+            color: red;
+         }
+        div{
+            display: inline-block;   
+        }
+        .php{
+            background-color:rgba(96, 192, 205, 0.945);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .jquery{
+            background-color:lightyellow;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .java{
+            background-color:lightskyblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            ;
+        }
+        .cc{
+            background-color:lightgreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .w3css{
+            background-color:lightslategray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .bootstrap{
+            background-color:lightsalmon;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .c{
+            background-color: rgb(237, 139, 188);
+            width:45%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px;
+            box-shadow: 2px 2px 3px 4px yellow;
+        }
+        .c2{
+            background-color: rgb(146, 200, 175);
+            width:45%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px; 
+            box-shadow: 2px 2px 3px 4px rgb(255, 4, 0); 
+        }
+        .R{
+            background-color: rgba(237, 242, 240, 0.893);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px;  
+        }
+        .kotlin{
+            background-color: rgb(146, 200, 175);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px;  
+        }
+        .nodejs{
+            background-color: rgb(66, 171, 176);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px;  
+        }
+        .react{
+            background-color:lightcoral;
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px;  
+        }
+        .json{
+            background-color:rgb(234, 237, 149);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px; 
+            font-style: italic; 
+        }
+        .vue{
+            background-color:rgb(242, 202, 202);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px; 
+            font-style: oblique; 
+        }
+        .mysql{
+            background-color:rgb(201, 232, 192);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px; 
+            font-style:italic; 
+        }
+        .xml{
+            background-color:rgb(108, 166, 214);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px; 
+            font-style: oblique; 
+        }
+        .sass{
+            background-color:rgb(230, 139, 228);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:right;
+            margin: 20px 30px;   
+        }
+        .icons{
+            background-color:rgb(218, 129, 129);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:justify;
+            margin: 20px;  
+        }
+        .rwd{
+            background-color:rgb(108, 166, 214);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:left;
+            margin: 20px 30px;  
+        }
+        .graphics{
+            background-color:rgb(177, 245, 162);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px;  
+        }
+        .svg{
+            background-color:rgb(217, 225, 142);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px;  
+            text-shadow:hoffset voffset blurradius color;
+            text-shadow:2px 0px 4px rgb(102, 0, 255) ; 
+        }
+        .canvas{
+            background-color:rgb(207, 217, 225);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px; 
+            text-shadow:hoffset voffset blurradius color;
+            text-shadow:2px 0px 4px red ;  
+        }
+        .raspberry{
+            background-color:rgb(107, 97, 171);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px 30px; 
+            text-shadow:hoffset voffset blurradius color;
+            text-shadow:2px 0px 1px yellow ;  
+        }
+.cybersecurity{
+    background-color:rgb(241, 166, 149);
+            width:20%;
+            height:150px;
+            border-radius: 10px;
+            text-align:center;
+            margin: 20px;
+            text-shadow:hoffset voffset blurradius color;
+            text-shadow:2px 0px 1px red ; 
+}
+
+    </style>    
+</head>
+<body style="background-color: black;">
+    <div>
+    <header>
+           <ul>
+            <li>PHP</li>
+            <li>jQUERY</li>
+            <li>JAVA</li>
+            <li>C++</li>
+            <li>W3.CSS</li>
+            <li>Bootatrap</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>Kotlin</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>JSON</li>
+            <li>Vue</li>
+            <li>MySQL</li>
+            <li>XML</li>
+            <li>RWD</li>
+            <li>Graphics</li>
+            <li>Cyber Security</li>
+           </ul>
+    </header>
+    <div class="php">
+        <h1>PHP</h1>
+        <P>A web server programming language</P>
+        <input style="background-color: black;color: white; border-radius: 10px; width: 30%; height: 35px;" type="button" value="Learn PHP" id="button">
+    </div>
+    <div class="jquery">
+        <h1>jQuery</h1>
+        <P>A JS library for developing web pages</P>
+        <input style="background-color: black;color: white; border-radius: 10px; width: 30%; height: 35px" type="button" value="Learn jQuery" id="button" >
+    </div>
+    <div class="java">
+     <h1>Java</h1>
+     <p>A programming language</p>
+     <input style="background-color: black;color: white; border-radius: 10px; width: 30%; height: 35px" type="button" value="Learn jQuery" id="button">
+    </div>
+    <div class="cc">
+        <h1>C++</h1>
+        <p>A programming language</p>
+        <input style="background-color: black;color: white; border-radius: 10px; width: 30%; height: 35px" type="button" value="Learn jQuery" id="button">
+       </div>
+    <div class="w3css">
+        <h1>W3.CSS</h1>
+        <p>A CSS framework for faster and better responsive web pages</p>
+        <input style="background-color: black;color: white; border-radius: 10px; width: 30%; height: 35px" type="button" value="Learn jQuery" id="button">
+    </div>
+    <div class="bootstrap">
+        <h1>Bootstrap</h1>
+        <p>A CSS framework for designing better web pages</p>
+        <input style="background-color: black;color: white; border-radius: 10px; width: 30%; height: 35px" type="button" value="Learn jQuery" id="button">
+    </div>
+    <div class="c">
+        <h1>C</h1>
+    </div>
+    <div class="c2">
+        <h1>C#</h1>
+    </div>
+    <div class="R">
+        <h1>R</h1>
+    </div>
+<div class="kotlin">
+    <h1>Kotlin</h1>
+</div>
+<div class="nodejs">
+    <h1>Node.js</h1>
+</div>
+<div class="react">
+    <h1>React</h1>
+</div>
+<div class="json">
+    <h1>JSON</h1>
+</div>
+<div class="vue">
+    <h1>Vue</h1>
+</div>
+<div class="mysql">
+    <h1>MySQL</h1>
+</div>
+<div class="xml">
+    <h1>XML</h1>
+</div>
+<div class="icons">
+    <h4>Icons are used to identify what the symbols spesifies in a particular site</h4>
+</div>
+<div class="rwd">
+    <h1>RWD</h1>
+</div>
+<div class="graphics">
+    <h1>Graphics</h1>
+</div>
+<div class="sass">
+    <h1>Sass</h1>
+</div>
+<div class="svg">
+    <h1>SVG</h1>
+</div>
+<div class="canvas">
+    <h1>Canvas</h1>
+</div>
+ <div class="raspberry">
+    <h1>Raspberry Pi</h1>
+ </div>
+ <div class="cybersecurity">
+    <h1>Cyber Security</h1>
+ </div>  
+ </div>
+</body>
+</html>
