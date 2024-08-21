@@ -1,0 +1,110 @@
+header {
+    background-color:white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: large;
+    position:sticky;
+    top: 0px;
+}
+body{
+    background-color:whitesmoke;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+.parent {
+    width: 100%;
+    height: 80vh;
+    background-image: url(burger.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.child {
+    font-size: xx-large;
+    color: rgb(94, 89, 89);
+    margin: 0px 0px 40px 40px;
+}
+/* ------------------------------------------------- */
+img {
+    width: 35vw;
+    height: 80vh;
+}
+.container {
+    display: flex;
+    padding: 70px;
+    gap: 40px;
+}
+.about {
+    font-size: xx-large;
+    padding: 10px 80px 30px;
+}
+.letterspace {
+    letter-spacing: 5px;
+    padding: 10px 80px 30px;
+}
+.fontsize {
+    font-size: large;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.fontcolor {
+    font-size: large;
+    color: grey;
+    line-height: 30px;
+}
+/* --------------------------Menu------------------------------- */
+.menu {
+    font-size: xx-large;
+    padding: 0px 0px 40px 250px;
+}
+.letter {
+    letter-spacing: 5px;
+    padding: 10px 80px 10px 30px;
+    font-size: 20px;
+}
+.font {
+    font-size: medium;
+    color: grey;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+/* ----------------------------------------------------------- */
+.contact {
+    font-size: xx-large;
+    letter-spacing: 3px;
+    padding: 40px 0px 40px 50px;
+}
+.content {
+    padding-bottom: 40px ;
+    padding-left: 50px;
+}
+.thickcolor {
+    font-weight: 800;
+    color: rgb(103, 102, 102);
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.msg:hover {
+    color:blue;
+}
+.msg{
+    padding:10px;
+    width: 125px;
+    border: 1px solid black;
+    margin-left:60px ;
+}
+ input{
+    width: 100%;
+    padding: 20px 0px 40px 30px;
+    margin-left: 60px;
+
+} 
+footer{
+    text-align: center;
+    font-weight: 900;
+    font-size: larger;
+}
