@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    .container{
+            background-color: rgb(30, 25, 25);
+            padding: 10px;
+            display: grid;
+            gap: 10px 10px;
+            border: 1px solid;
+            grid-template-columns: auto auto auto;
+            margin: 6%;
+        }
+        div{
+            border: 5px solid;
+            padding: 10px;
+        }
+        .bar1{
+            grid-column: 1/4;
+            text-align: center;
+            padding: 20px;
+            background-color: blueviolet;
+        }
+        .bar2{
+            grid-row:2/4 ;
+            text-align: center;
+            padding: 100px;
+            background-color: aquamarine;
+        }
+        .bar3{
+            grid-column: 2/4;
+            text-align: center;
+            padding: 50px;
+            background-color:dodgerblue;
+        }
+        .bar4{
+            background-color: dodgerblue;
+            text-align: center;
+            padding: 90px; 
+            grid-column: 2/4;
+            grid-column: 2/3;
+
+        }
+        .bar5{
+            background-color: dodgerblue;
+            text-align: center;
+            padding: 90px;
+            grid-column: 3/4;
+        }
+        .bar6{
+            grid-column: 1/4;
+            padding: 20px;
+            text-align: center;
+            background-color: blueviolet;
+        }
+        body{
+            background-color: rgb(71, 74, 72);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar1">Header</div>
+        <div class="bar2">sidebar</div>
+        <div class="bar3">Content-1</div>
+        <div class="bar4">Content-2</div>
+        <div class="bar5">Content-3</div>
+        <div class="bar6">Footer</div>
+    </div>
+</body>
+</html>
