@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Responsive</title>
+    <style>
+    .container{
+            background-color:aqua;
+            padding: 10px;
+            display: grid;
+            gap: 10px 10px;
+            border: 1px solid;
+            height: 60vh;
+            width: 50vw;
+            grid-template-areas:
+            "Header Header Header"
+            "nav nav nav" 
+            "Article Article Aside" 
+            "Section Section Aside"
+            "Footer Footer Footer";
+            margin: 6%;
+        }
+        div{
+            border: 5px solid;
+            padding: 10px;
+        }
+        .bar1{
+            grid-area:Header ;
+        }
+        .bar2{
+            grid-area:nav ;
+        }
+        .bar3{
+            grid-area:Article ;
+        }
+        .bar4{
+            grid-area:Section ;
+        }
+        .bar5{
+            grid-area:Aside ;
+        }
+        .bar6{
+            grid-area:Footer ;
+        }
+        body{
+            background-color: rgb(71, 74, 72);
+        }
+        @media only screen and (width<600px){
+               .container{
+                grid-template-areas: 
+               "Header"
+                "nav"
+                "Article"
+                "Aside"
+                "Section"
+                "Footer";
+        }
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="bar1">Header</div>
+        <div class="bar2">Nav</div>
+        <div class="bar3">Article</div>
+        <div class="bar4">Section</div>
+        <div class="bar5">Aside</div>
+        <div class="bar6">Footer</div>
+    </div>
+</center>
+</body>
+</html>

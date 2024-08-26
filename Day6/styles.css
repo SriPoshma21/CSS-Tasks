@@ -7,15 +7,15 @@ header {
     position:sticky;
     top: 0px;
 }
-body{
+
+/* body{
     background-color:whitesmoke;
-}
+} */
 nav {
     display: flex;
     gap: 30px;
 }
 .parent {
-    width: 100%;
     height: 80vh;
     background-image: url(burger.jpg);
     background-repeat: no-repeat;
@@ -36,7 +36,10 @@ img {
 .container {
     display: flex;
     padding: 70px;
-    gap: 40px;
+    /* gap: 40px; */
+}
+.child2{
+    
 }
 .about {
     font-size: xx-large;
@@ -59,7 +62,7 @@ img {
 /* --------------------------Menu------------------------------- */
 .menu {
     font-size: xx-large;
-    padding: 0px 0px 40px 250px;
+    padding: 0px 0px 40px 30px;
 }
 .letter {
     letter-spacing: 5px;
@@ -115,3 +118,23 @@ footer{
     font-weight: 900;
     font-size: larger;
 }
+@media only screen and (width<600px){
+    .nav{
+        display: none;
+    }
+}
+@media only screen and (width<600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        font-size: xx-large;
+        padding: 10px 30px 30px;
+    }
+    .letterspace {
+        letter-spacing: 5px;
+        padding: 10px 30px 30px;
+    }
+}
+

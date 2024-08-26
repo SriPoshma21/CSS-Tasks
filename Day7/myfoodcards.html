@@ -9,34 +9,47 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        header {
+        header, nav {
+            background-color: white;
             display: flex;
             justify-content: space-between;
-            padding: 30px;
+            border-radius: 5px;
+            padding: 10px;
+            width: 96.3%;
+            margin-left: 2rem;
+            font-size: xx-large;
+            position:sticky;
+            top: 0px;
         }
-
-        nav {
+         .tcontainer{
+            margin-left: 3rem;
+            margin: 2rem 3rem 2rem 3rem;
+            width: 95%;
+        } 
+        /* nav {
             display: flex;
             gap: 35vw;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: xx-large;
-        }
+        } */
 
-        .container {
+        .container1{
             display: grid;
             grid-template-columns: auto auto auto auto;
-            padding: 40px 0px 40px 30px;
-            width: 90%;
-            gap: 2% 2%;
+            margin:2rem 2rem 2rem 4rem;
+            text-align: center;
+            /* gap: 1% 1%; */
         }
-
+        .child{
+            /* margin-top: 40px; */
+            /* margin-left: 30px; */
+            /* height: 80vh; */
+        }
         img {
-            width: 22vw;
-            gap: 30px;
-            border-radius: 4px;
-            
+            width:15rem;
+            border-radius: 4px; 
+             height: 50vh; 
         }
-
         .textsize {
             font-size: x-large;
             padding-top: 20px;
@@ -44,21 +57,23 @@
         }
 
         .fontcolor {
-            color: rgb(41, 40, 40);
+            color: rgb(94, 88, 88);
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding-bottom: 40px;
         }
-
+        .container2{
+             margin:2rem 2rem 2rem 10rem;
+        }
         .about {
             text-align: center;
             font-size: xx-large;
             padding-top: 50px;
             padding-bottom: 20px;
         }
-
         .img2 {
             width: 70%;
-            padding: 20px 80px 30px 170px;
+            height: 80vh;
+             padding:2rem 4rem 3rem  ;
         }
 
         .fsize {
@@ -79,87 +94,107 @@
             padding-bottom: 60px;
         }
 
-        .container2 {
+        .container3{
             display: grid;
             grid-template-columns: auto auto auto;
             padding-top: 2rem;
             padding-left:3rem;
             gap: 2rem;
         }
-
         .img3 {
-            width: 70px;
+            width: 5rem;
             padding-top: 30px;
+            height: 4rem;
         }
-
         .gap {
             padding-top: 30px;
             width: 300px;
             font-weight: 500;
         }  
         .thick{
-            font-weight: 700;
+            font-size: large;
+            margin-left: 1rem;
+        }
+        @media only screen and (width<800px){
+            .container1{
+                grid-template-columns: auto auto;
+            }
+        }
+        @media only screen and (width<600px){
+            .container1{
+                grid-template-columns: auto;
+            }
+        }
+        @media only screen and (width<600px){
+            .container2{
+                margin:2rem 2rem 2rem 3rem;
+            }
+        }
+        @media only screen and (width<600px){
+            .container3{
+                grid-template-columns: auto;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div><i class="fa-solid fa-bars" style="font-size: xx-large;"></i></div>
         <nav>
+        <div><i class="fa-solid fa-bars" style="font-size: xx-large;"></i></div>
+        
             <div>My Food</div>
             <div>Mail</div>
         </nav>
     </header>
-    <main>
-        <section class="container">
-            <div>
+    <main class="tcontainer">
+        <section class="container1">
+            <div class="child">
                 <img src="sandwich.jpg" alt="">
                 <div class="textsize">The Perfect Sandwich,A Real NYC Classic</div>
                 <div class="fontcolor">Just some random text,lorem ipsum text praesent tincidunt ipsum lipsum.</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="steak.jpg" alt="">
                 <div class="textsize">Let Me Tell You About This Steak</div>
                 <div class="fontcolor">Once again, some random text to lorem lorem lorem lorem ipsum text praesent
                     tincidunt ipsum lipsum.</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="cherries.jpg" alt="">
                 <div class="textsize">Cherries, interrupted</div>
                 <div class="fontcolor">Lorem ipsum text praesent tincidunt ipsum lipsum.
-
-                    What else?</div>
+                What else?</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="wine.jpg" alt="">
                 <div class="textsize">Once Again, Robust Wine and Vegetable Pasta</div>
                 <div class="fontcolor">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="icecream.jpg" alt="">
                 <div class="textsize">All I Need Is a Popsicle</div>
                 <div class="fontcolor">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="salmon.jpg" alt="">
                 <div class="textsize">Salmon For Your Skin</div>
                 <div class="fontcolor">Once again, some random text to lorem lorem lorem lorem ipsum text praesent
                     tincidunt ipsum lipsum.</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="sandwich (1).jpg" alt="">
                 <div class="textsize">The Perfect Sandwich, A Real Classic</div>
                 <div class="fontcolor">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
             </div>
-            <div>
+            <div class="child">
                 <img src="croissant.jpg" alt="">
                 <div class="textsize">Le French</div>
                 <div class="fontcolor">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</div>
             </div>
         </section>
         <hr>
-        <section>
+        <section class="container2">
             <div class="about">About Me, The Food Man</div>
             <img class="img2" src="chef.jpg" alt="chef">
             <div class="fsize">Iam Who I Am!</div>
@@ -171,7 +206,7 @@
                 lectus vitae, ultricies congue gravida diam non fringilla.</div>
         </section>
         <hr>
-        <section class="container2">
+        <section class="container3">
                     <div class="thick">FOOTER
                         <div class="gap">Praesent tincidunt sed tellus ut rutrum.sed vitae justo condimentum, porta lectus vitae
                             ultricus congue gravida diam non fringilla.</div>
